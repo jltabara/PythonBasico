@@ -1,0 +1,19 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Hola mundo}{1}% 
+\contentsline {chapter}{\numberline {2}Enteros I}{3}% 
+\contentsline {chapter}{\numberline {3}Enteros II}{5}% 
+\contentsline {chapter}{\numberline {4}N\'umeros reales}{8}% 
+\contentsline {chapter}{\numberline {5}Variables}{10}% 
+\contentsline {chapter}{\numberline {6}Programas I}{15}% 
+\contentsline {chapter}{\numberline {7}Programas II}{16}% 
+\contentsline {chapter}{\numberline {8}Cadenas I}{17}% 
+\contentsline {chapter}{\numberline {9}Cadenas II}{19}% 
+\contentsline {chapter}{\numberline {10}Operadores relacionales}{20}% 
+\contentsline {chapter}{\numberline {11}Tipos de datos}{23}% 
+\contentsline {chapter}{\numberline {12}Entrada por teclado}{25}% 
+\contentsline {chapter}{\numberline {13}Condicionales I}{26}% 
+\contentsline {chapter}{\numberline {14}Condicionales II}{29}% 
+\contentsline {chapter}{\numberline {15}Condicionales III}{30}% 
+\contentsline {chapter}{\numberline {16}Operadores l\'ogicos}{32}% 
+\contentsline {chapter}{\numberline {17}Condicionales IV}{35}% 
+\contentsline {chapter}{\numberline {18}Listas I}{36}% 
