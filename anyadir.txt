@@ -1,0 +1,8 @@
+for loop para tuplas
+retorno de varios valores usando tuplas
+pasar muchos argumentos a una función usando tuplas
+comparacion de tupla. Termino a termino
+Convertir tupla en diccionario y diccionario en lista de tuplas de pares
+la funcion zip. Devuelve una lista de tuplas. Mejor en diccionarios
+Para llamar a un atributo dentro de un método debemos poner self
+Para llamar a un método dentro de otro debemos poner la palabra self

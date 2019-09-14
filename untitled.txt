@@ -1,0 +1,6 @@
+for loop para tuplas
+retorno de varios valores usando tuplas
+pasar muchos argumentos a una función usando tuplas
+comparacion de tupla. Termino a termino
+Convertir tupla en diccionario y diccionario en lista de tuplas de pares
+la funcion zip. Devuelve una lista de tuplas

@@ -1,35 +1,16 @@
- \documentclass[a4paper, 12pt]{scrreprt}
+\documentclass[a4paper, 11pt]{scrartcl}
 %%%%%%%%%%%%%%%%%%%%%%Paquetes
 \usepackage[spanish]{babel}  
-\usepackage{indentfirst} %%%%%%%%%%%%%%%%Crear un indent al principio
-\usepackage[latin1]{inputenc}%%%%%%%%%%%%ñ y acentos
 \usepackage{tcolorbox}
 \usepackage{color}
-\usepackage{mathrsfs}
-\usepackage{enumerate}
 \usepackage{fourier}
-\usepackage{latexsym,amsmath,amssymb,amsfonts}
-\definecolor{burgundy}{rgb}{0.5, 0.0, 0.13}
-
-\usepackage[Bjornstrup]{fncychap}
-
-\ChTitleVar{\huge\sffamily\bfseries\color{burgundy}}
-\ChNumVar{\color{burgundy}\fontsize{76}{80}\usefont{OT1}{pzc}{m}{n}\selectfont}
 
 
 
-\usepackage[a4paper, total={\textwidth,9.5in }]{geometry}
+\newenvironment{code}{\begin{tcolorbox}[colback=red!2!white]}{\end{tcolorbox}}
 
-
-
-\newenvironment{capitulo}{\begin{tcolorbox}[colback=blue!5!white,colframe=blue!50!black]}{\end{tcolorbox}}
-\newenvironment{ejer}{\begin{tcolorbox}[colback=blue!2!white,colframe=blue!50!black]}{\end{tcolorbox}}
-
-\newenvironment{code}{\begin{tcolorbox}[colback=red!2!white,colframe=blue!50!black]}{\end{tcolorbox}}
-\setlength{\parskip}{2mm}
-
-
-
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
 
 
 \author{jltabara@gmail.com}
@@ -39,13 +20,7 @@
 \date{}
 
 
-
-
-
 \begin{document}
-
-
-
 
 
 
@@ -53,50 +28,48 @@
 
 \thispagestyle{empty}
 
+\newpage
 
 
 
-\chapter{Hola mundo}
-
+\section{Hola mundo}
 \setcounter{page}{1}
 
 
 
-\begin{ejer}
 
-\subsubsection*{Comillas dobles y simples}
 
-Imprime tu nombre utilizando la función \verb|print()|. Lo tienes que escribir con comillas dobles  y con comillas simples.
+\noindent\textbf{\sffamily Comillas dobles y simples}
 
-\end{ejer}
+Imprime tu nombre utilizando la funciÃ³n \verb|print()|. Lo tienes que escribir con comillas dobles  y con comillas simples.
 
-\begin{ejer}
 
-\subsubsection*{Dos líneas con dos sentencias}
 
-Imprime tu nombre y tus apellidos en dos líneas, utilizando dos sentencias \verb|print()|.
+\noindent\textbf{\sffamily Dos lÃ­neas con dos sentencias}
 
-\end{ejer}
+Imprime tu nombre y tus apellidos en dos lÃ­neas, utilizando dos sentencias \verb|print()|.
 
-\begin{ejer}
 
-\subsubsection*{Dos líneas con una única sentencia}
 
-Imprime tu nombre y tus apellidos en dos líneas, utilizando una única sentencia \verb|print()| y la secuencia de escape \verb|\n|.
 
-\end{ejer}
 
-\begin{ejer}
+\noindent\textbf{\sffamily Dos lÃ­neas con una Ãºnica sentencia}
 
-\subsubsection*{ \dag{}  Tabulador}
+Imprime tu nombre y tus apellidos en dos lÃ­neas, utilizando una Ãºnica sentencia \verb|print()| y la secuencia de escape \verb|\n|.
 
-El caracter \verb|\t| es un caracter de escape que imprime una tabulación. Utilizando este caracter imprime la tabla:
+
+
+
+
+\noindent\textbf{\sffamily  \dag{}  Tabulador}
+
+El caracter \verb|\t| es un caracter de escape que imprime una tabulaciÃ³n. Utilizando este caracter imprime la tabla:
 
 \begin{center}
 
 \begin{tabular}{|l|l|}
 \hline 
-Matemáticas & SB \\ 
+MatemÃ¡ticas & SB \\ 
 \hline 
 Lengua & SB\\ 
 \hline 
@@ -106,21 +79,21 @@ Python & MH \\
 
 \end{center}
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Comillas dentro del texto}
 
-¿Cómo se puede escribir una comilla simple dentro de un texto? Decir al menos dos formas de hacerlo.
 
-\end{ejer}
+\noindent\textbf{\sffamily Comillas dentro del texto}
 
-\begin{ejer}
+Â¿CÃ³mo se puede escribir una comilla simple dentro de un texto? Decir al menos dos formas de hacerlo.
 
-\subsubsection*{\dag{} Repetición de la misma cadena}
 
- Prueba los siguientes códigos para entender su funcionamiento:
+
+
+
+\noindent\textbf{\sffamily \dag{} RepeticiÃ³n de la misma cadena}
+
+ Prueba los siguientes cÃ³digos para entender su funcionamiento:
  \smallskip
  
  \begin{code}
@@ -138,18 +111,18 @@ Escribe mil veces la frase:
 Debo estudiar Python
 \end{center}
 
-\end{ejer}
+
+
+\newpage
+
+
+\section{Enteros I}
 
 
 
 
-\chapter{Enteros I}
 
-
-
-\begin{ejer}
-
-\subsubsection*{Sumas}
+\noindent\textbf{\sffamily Sumas}
 
 Realiza las siguientes sumas:
 
@@ -157,11 +130,11 @@ $$
 a)\, 56+890 \qquad b)\, 456 + 2345 + 123
 $$
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Restas}
+
+
+\noindent\textbf{\sffamily Restas}
 
 Realiza las siguientes restas:
 
@@ -169,11 +142,11 @@ $$
 a)\, 456 - 234 \qquad b)\, 345 - 82612 \qquad c)\, -456 - 234
 $$
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Multiplicaciones}
+
+
+\noindent\textbf{\sffamily Multiplicaciones}
 
 Realiza las siguientes multiplicaciones:
 
@@ -181,11 +154,11 @@ $$
 a)\,45 \cdot 123456789 \qquad b)\,(-3) \cdot 67 \qquad c)\, (-34) \cdot (-2)
 $$
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Divisiones}
+
+
+\noindent\textbf{\sffamily Divisiones}
 
 Realiza las siguientes divisiones:
 
@@ -194,11 +167,11 @@ $$
 a)\, 456 / 34 \qquad b)\ 56/7\qquad  c)\, (-345) / 98765
 $$
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Operaciones combinadas}
+
+
+\noindent\textbf{\sffamily Operaciones combinadas}
 
 Realiza las siguientes operaciones combinadas:
 
@@ -206,11 +179,11 @@ $$
 a)\, 5 - 8\cdot 67 + 7 - 34 \cdot 23\qquad b)\, (2+5-3)(3-78-9)
 $$
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Operaciones combinadas}
+
+
+\noindent\textbf{\sffamily Operaciones combinadas}
 
 Intenta adivinar el resultado de las siguientes operaciones antes de realizarlas:
 
@@ -218,47 +191,47 @@ $$
 a)\,4 +8 \cdot 4 \qquad b)\, 5\cdot (-4) + 5\cdot 7\qquad c)\, 8-6/2 + 1\cdot 2
 $$
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Colocación de paréntesis}
 
-Pon paréntesis en la siguiente expresión para obtener tres resultados distintos:
+
+\noindent\textbf{\sffamily ColocaciÃ³n de parÃ©ntesis}
+
+Pon parÃ©ntesis en la siguiente expresiÃ³n para obtener tres resultados distintos:
 $$
 4 - 9 * 8 +7
 $$
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Problema}
 
-Tenemos 2 cajones de manzanas con 20 manzanas cada uno. Nos traen otros tres cajones de manzanas con 20 manzanas cada uno. ¿Cuántas manzanas tendremos? Se tiene que resolver con una única operación combinada.
 
-\end{ejer}
+\noindent\textbf{\sffamily Problema}
 
-\begin{ejer}
-
-\subsubsection*{Problema}
-
-Hay que repartir una caja de bombones de 24 bombones entre 2 grupos de 3 alumnos cada uno. ¿A cuántos bombones toca cada alumno? Se tiene que resolver con una única operación combinada.
-
-\end{ejer}
+Tenemos 2 cajones de manzanas con 20 manzanas cada uno. Nos traen otros tres cajones de manzanas con 20 manzanas cada uno. Â¿CuÃ¡ntas manzanas tendremos? Se tiene que resolver con una Ãºnica operaciÃ³n combinada.
 
 
 
 
 
-\chapter{Enteros II}
+\noindent\textbf{\sffamily Problema}
+
+Hay que repartir una caja de bombones de 24 bombones entre 2 grupos de 3 alumnos cada uno. Â¿A cuÃ¡ntos bombones toca cada alumno? Se tiene que resolver con una Ãºnica operaciÃ³n combinada.
 
 
 
-\begin{ejer}
 
 
-\subsubsection*{Potencias}
+\newpage
+
+\section{Enteros II}
+
+
+
+
+
+
+\noindent\textbf{\sffamily Potencias}
 
 Calcular las siguientes potencias:
 
@@ -266,35 +239,35 @@ $$
 a)\, 3^4 \qquad b)\, (-3)^{23} \qquad c)\, 4^{500}
 $$
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Prioridad de las potencias}
 
-Calcula el siguiente resultado de cabeza y después comprueba con Python:
+
+\noindent\textbf{\sffamily Prioridad de las potencias}
+
+Calcula el siguiente resultado de cabeza y despuÃ©s comprueba con Python:
 
 $$
 5 * 2 ** 3
 $$
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Colocación de paréntesis}
 
-Pon paréntesis en la siguiente operación para obtener tres resultados distintos:
+
+\noindent\textbf{\sffamily ColocaciÃ³n de parÃ©ntesis}
+
+Pon parÃ©ntesis en la siguiente operaciÃ³n para obtener tres resultados distintos:
 
 $$
 3*2**5*5
 $$
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Cociente y resto}
+
+
+\noindent\textbf{\sffamily Cociente y resto}
 
 Calcula el cociente y el resto de las divisiones:
 
@@ -302,54 +275,54 @@ $$
 a)\,4678 / 23 \qquad b)\, 1234567 / 9875
 $$
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Cociente y resto}
 
-Calcula el cociente y el resto y realiza la comprobación de la división:
+
+\noindent\textbf{\sffamily Cociente y resto}
+
+Calcula el cociente y el resto y realiza la comprobaciÃ³n de la divisiÃ³n:
 
 $$
 5635 / 258
 $$
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Espacios en blanco entre operadores}
 
-Comprueba que puedes escribir todos los espacios en blanco que quieras entre los operadores y el número. También se puede no dejar ningún espacio.
 
-\end{ejer}
+\noindent\textbf{\sffamily Espacios en blanco entre operadores}
 
-\begin{ejer}
+Comprueba que puedes escribir todos los espacios en blanco que quieras entre los operadores y el nÃºmero. TambiÃ©n se puede no dejar ningÃºn espacio.
 
-\subsubsection*{\dag{}  Prioridad de operaciones con //}
+
+
+
+
+\noindent\textbf{\sffamily \dag{}  Prioridad de operaciones con //}
 
 Haz pruebas para comprobar si se realiza antes el operador \verb|//| o el operador \verb|+|.
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{\dag{} División entre cero}
 
-Comprueba que si dividimos entre cero obtenemos un error. Depués de esto intenta poner paréntesis en la siguiente operación para obtener un error:
+
+\noindent\textbf{\sffamily \dag{} DivisiÃ³n entre cero}
+
+Comprueba que si dividimos entre cero obtenemos un error. DepuÃ©s de esto intenta poner parÃ©ntesis en la siguiente operaciÃ³n para obtener un error:
 
 $$
 4 / 20 - 5 * 4
 $$
 
-\end{ejer}
-
-\begin{ejer}
-
-\subsubsection*{\dag{}  La función \textit{divmod()}}
 
 
-La función \verb|divmod()| permite calcular el cociente y el resto. Por ejemplo si tecleamos:
+
+
+\noindent\textbf{\sffamily \dag{}  La funciÃ³n \textit{divmod()}}
+
+
+La funciÃ³n \verb|divmod()| permite calcular el cociente y el resto. Por ejemplo si tecleamos:
 
 \smallskip
 
@@ -361,23 +334,23 @@ divmod(43, 5)
 
 \end{code}
 
-el resultado es una pareja de números. El primero es cociente y el segundo el resto.
+el resultado es una pareja de nÃºmeros. El primero es cociente y el segundo el resto.
 
-Calcula, utilizando \verb|divmod()| el cociente y el resto de la división:
+Calcula, utilizando \verb|divmod()| el cociente y el resto de la divisiÃ³n:
 
 $$
 456 / 34
 $$
 
 
-\end{ejer}
-
-\begin{ejer}
-
-\subsubsection*{\dag{} La función \textit{pow()}}
 
 
-La función \verb|pow()| permite calcular potencias. Por ejemplo, prueba los siguientes códigos para entender su funcionamiento:
+
+
+\noindent\textbf{\sffamily \dag{} La funciÃ³n \textit{pow()}}
+
+
+La funciÃ³n \verb|pow()| permite calcular potencias. Por ejemplo, prueba los siguientes cÃ³digos para entender su funcionamiento:
 
 \smallskip
 
@@ -392,20 +365,20 @@ pow(2,5)
 
 
 
-Utilizando la función \verb|pow()| calcula la potencia:
+Utilizando la funciÃ³n \verb|pow()| calcula la potencia:
 
 $$
 (-3)^4
 $$
 
-\end{ejer}
 
 
-\begin{ejer}
 
-\subsubsection*{\dag{}  Convertir números a binario}
 
-Con la función \verb|bin()| podemos convertir números enteros en su representación en binario. Observar que aparece entre comillas y delante del número también aparece \verb|0b|. El número binario es la parte formada por ceros y unos.
+
+\noindent\textbf{\sffamily \dag{}  Convertir nÃºmeros a binario}
+
+Con la funciÃ³n \verb|bin()| podemos convertir nÃºmeros enteros en su representaciÃ³n en binario. Observar que aparece entre comillas y delante del nÃºmero tambiÃ©n aparece \verb|0b|. El nÃºmero binario es la parte formada por ceros y unos.
 
 \smallskip
 
@@ -418,15 +391,15 @@ bin(63) # Resultado '0b111111'
 
 \end{code}
 
-Convierte algunos números en binario.
+Convierte algunos nÃºmeros en binario.
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{\dag{} Convertir de binario a entero}
 
-Esta conversión es más complicada. Primero tenemos que escribir el número binario entre comillas y precedido de \verb|0b|. Después debemos emplear la función \verb|int()| de un modo especial, como en el siguiente código:
+
+\noindent\textbf{\sffamily \dag{} Convertir de binario a entero}
+
+Esta conversiÃ³n es mÃ¡s complicada. Primero tenemos que escribir el nÃºmero binario entre comillas y precedido de \verb|0b|. DespuÃ©s debemos emplear la funciÃ³n \verb|int()| de un modo especial, como en el siguiente cÃ³digo:
 
 \smallskip
 
@@ -439,18 +412,19 @@ int('0b111111', 2) # Resultado 63
 
 \end{code}
 
-\end{ejer}
 
 
 
 
-\chapter{Números reales}
+\newpage
+
+\section{NÃºmeros reales}
 
 
 
-\begin{ejer}
 
-\subsubsection*{Operaciones combinadas}
+
+\noindent\textbf{\sffamily Operaciones combinadas}
 
 Realiza las siguientes operaciones:
 
@@ -458,42 +432,42 @@ $$
 a)\,45.89 \cdot 45.7^4\qquad b)\, 1/3\cdot 3 + 9
 $$
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Notación científica}
 
-Realiza las siguientes operaciones en notación científica:
+
+\noindent\textbf{\sffamily NotaciÃ³n cientÃ­fica}
+
+Realiza las siguientes operaciones en notaciÃ³n cientÃ­fica:
 
 $$
 1.6 \cdot 10^4 \cdot 4.789 \cdot 10^6
 $$
 
-\end{ejer}
-
-\begin{ejer}
-
-\subsubsection*{Convertir pies en metros}
-
-Convierte 34,6 pies en metros. Buscar en Internet la fórmula de conversión.
-
-\end{ejer}
 
 
-\begin{ejer}
 
-\subsubsection*{Muchos decimales es imposible}
 
-Escribir un número con más de 20 decimales. Comprobar que Python recorta el número, pues no puede almacenar tantos decimales.
+\noindent\textbf{\sffamily Convertir pies en metros}
 
-\end{ejer}
+Convierte 34,6 pies en metros. Buscar en Internet la fÃ³rmula de conversiÃ³n.
 
-\begin{ejer}
 
-\subsubsection*{La fórmula de Einstein}
 
-Calcula la energia liberada por una masa de 5 gramos utilizando la fórmula de Einstein
+
+
+
+\noindent\textbf{\sffamily Muchos decimales es imposible}
+
+Escribir un nÃºmero con mÃ¡s de 20 decimales. Comprobar que Python recorta el nÃºmero, pues no puede almacenar tantos decimales.
+
+
+
+
+
+\noindent\textbf{\sffamily La fÃ³rmula de Einstein}
+
+Calcula la energia liberada por una masa de 5 gramos utilizando la fÃ³rmula de Einstein
 
 $$
 E= m c^2
@@ -501,13 +475,13 @@ $$
 
 (Buscar en Internet la velocidad de la luz)
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{\dag{} La función \textit{round()} }
 
-La función `round()` sirve para redondear números. Prueba los siguentes códigos para entender el funcionamiento:
+
+\noindent\textbf{\sffamily \dag{} La funciÃ³n \textit{round()} }
+
+La funciÃ³n `round()` sirve para redondear nÃºmeros. Prueba los siguentes cÃ³digos para entender el funcionamiento:
 
 \smallskip
 
@@ -521,66 +495,67 @@ round(-3.7)
 
 \end{code}
 
-\end{ejer}
 
-\begin{ejer}
 
- \subsubsection*{Notación científica}
+
+
+ \noindent\textbf{\sffamily NotaciÃ³n cientÃ­fica}
  
- El número $3.67 \cdot 10^5$ se escribe en Python como $3.67e5$. Escribe dicho número en forma de *notación científica* y comprueba que coincide con la multiplicación anterior. Comprueba lo mismo con otros números.
+ El nÃºmero $3.67 \cdot 10^5$ se escribe en Python como $3.67e5$. Escribe dicho nÃºmero en forma de *notaciÃ³n cientÃ­fica* y comprueba que coincide con la multiplicaciÃ³n anterior. Comprueba lo mismo con otros nÃºmeros.
  
- \end{ejer}
  
- \begin{ejer}
  
- \subsubsection*{Problema}
+ 
+ 
+ \noindent\textbf{\sffamily Problema}
 
-En una hamburguesería, cada hamburguesa cuesta 5.99?, las patatas fritas 1.99?  y cada refresco 1.49?.  Si vas solo y tomas una hamburguesa con patatas y refresco, ¿cuánto pagarás? Si invitas a tus amigos y se toman en total: 7 hamburguesas, 10 de patatas fritas y 8 refrescos, ¿cuánto te devuelven si pagas con un billete de 100??
-
-\end{ejer}
-
-
-
-
-\chapter{Variables}
+En una hamburgueserÃ­a, cada hamburguesa cuesta 5.99?, las patatas fritas 1.99?  y cada refresco 1.49?.  Si vas solo y tomas una hamburguesa con patatas y refresco, Â¿cuÃ¡nto pagarÃ¡s? Si invitas a tus amigos y se toman en total: 7 hamburguesas, 10 de patatas fritas y 8 refrescos, Â¿cuÃ¡nto te devuelven si pagas con un billete de 100??
 
 
 
-\begin{ejer}
 
-\subsubsection*{Guardar valores en variables}
+
+\newpage
+
+\section{Variables}
+
+
+
+
+
+\noindent\textbf{\sffamily Guardar valores en variables}
 
 Guarda en una variable llamada \verb|pi| el valor 3.1415.
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Perímetro de una circunferencia}
 
-La fórmula para calcular el perímetro de una circunferencia es 
+
+\noindent\textbf{\sffamily PerÃ­metro de una circunferencia}
+
+La fÃ³rmula para calcular el perÃ­metro de una circunferencia es 
 
 $$
 2\pi r
 $$
 
-Utiliza la variable anterior para calcular el perímetro de una circunferencia de radio 6 m.
+Utiliza la variable anterior para calcular el perÃ­metro de una circunferencia de radio 6 m.
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Palabras reservadas}
 
-Busca en Internet más palabras reservadas de Python y comprueba que no se pueden usar como nombres del variables.
 
-\end{ejer}
+\noindent\textbf{\sffamily Palabras reservadas}
 
-\begin{ejer}
+Busca en Internet mÃ¡s palabras reservadas de Python y comprueba que no se pueden usar como nombres del variables.
 
-\subsubsection*{Reasignación de valores a variables}
 
-Averigua que resultado imprime el siguiente código, explicando la razón.
+
+
+
+\noindent\textbf{\sffamily ReasignaciÃ³n de valores a variables}
+
+Averigua que resultado imprime el siguiente cÃ³digo, explicando la razÃ³n.
 \smallskip
 
 \begin{code}
@@ -595,13 +570,13 @@ print(f"La variable contiene el valor {hola}")
 
 \end{code}
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Nombres permitidos para variables}
 
-Algunos de los siguientes nombres de variables están permitidos y otros no son válidos. Explica las razones y comprueba los resultados.
+
+\noindent\textbf{\sffamily Nombres permitidos para variables}
+
+Algunos de los siguientes nombres de variables estÃ¡n permitidos y otros no son vÃ¡lidos. Explica las razones y comprueba los resultados.
 
 \smallskip
 
@@ -618,13 +593,13 @@ _b
 
 \end{code}
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{Reasignación de valores a variables}
 
-Haz un esquema donde se vean los valores que van tomando las variables y adivinar el resultado del siguiente código:
+
+\noindent\textbf{\sffamily ReasignaciÃ³n de valores a variables}
+
+Haz un esquema donde se vean los valores que van tomando las variables y adivinar el resultado del siguiente cÃ³digo:
 
 \smallskip
 
@@ -641,43 +616,23 @@ print(deuda)
 
 \end{code}
 
-\end{ejer}
 
-\begin{ejer}
 
- \subsubsection*{\dag{} Las letras acentuadas en las variables}
+
+
+ \noindent\textbf{\sffamily \dag{} Las letras acentuadas en las variables}
  
- ¿Se pueden escribir nombres de variables con letras acentuadas? ¿Son distintas las variables acentuadas de otras que se escriben igual pero sin acentuar?
+ Â¿Se pueden escribir nombres de variables con letras acentuadas? Â¿Son distintas las variables acentuadas de otras que se escriben igual pero sin acentuar?
  
- \end{ejer}
  
- \begin{ejer}
  
- \subsubsection*{\dag{} Borrado de variables con `del`}
-
-Una vez creada una variable sigue existiendo en memoria hasta la terminación del programa. Si queremos borrar una variable utilizamos la orden \verb|del|. Prueba el siguiente código que crea una variable, la imprime y después la borra. Comprueba que la variable ya no existe.
-
-\smallskip
-
-\begin{code}
-
-\begin{verbatim}
-a = 10
-print(a)
-del a
-\end{verbatim}
-
-\end{code}
 
 
 
-\end{ejer}
 
-\begin{ejer}
+\noindent\textbf{\sffamily  \dag{} Operaciones en la parte derecha de una asignaciÃ³n}
 
-\subsubsection*{ \dag{} Operaciones en la parte derecha de una asignación}
-
-Si queremos asignar a una variable el valor de una cierta operación debemos tener en cuenta que primero se realizan todas las operaciones a la derecha del operador \verb|=| y después se asigna a la variable. Que valor tendrá \verb|x| al final del programa en el siguiente código:
+Si queremos asignar a una variable el valor de una cierta operaciÃ³n debemos tener en cuenta que primero se realizan todas las operaciones a la derecha del operador \verb|=| y despuÃ©s se asigna a la variable. Que valor tendrÃ¡ \verb|x| al final del programa en el siguiente cÃ³digo:
 
 \smallskip
 
@@ -691,37 +646,14 @@ x = 3 * x +10
 
 \end{code}
 
-\end{ejer}
-
-\begin{ejer}
-
-\subsection*{$[\Uparrow]$ Inicializar varias variables al mismo tiempo}
-
-En general usamos una línea para inicializar cada una de las variables. Sin embargo se pueden inicializar varias a la vez. Para ello debemos escribir los nombres de las variables separados por comas, después el signo de asignación y después los valores que queremos asignar a cada variable, también separados por comas:
 
 
-\smallskip
-
-\begin{code}
-
-\begin{verbatim}
-x, y, z = 6, 7, 8
-\end{verbatim}
-
-\end{code}
-
-En la primera variable se guarda el primer valor, en la segunda el segundo valor, ...
-
-Guarda tu nombre y tu apellido en dos variables utilizando únicamente una línea.
-
-\end{ejer}
 
 
-\begin{ejer}
 
-\subsubsection*{\dag{} Operadores en asignación}
+\noindent\textbf{\sffamily \dag{} Operadores en asignaciÃ³n}
 
-Una operación muy común en Python es sumar a una variable un cierto valor y volver a guardar el nuevo valor en la misma variable. Por ejemplo
+Una operaciÃ³n muy comÃºn en Python es sumar a una variable un cierto valor y volver a guardar el nuevo valor en la misma variable. Por ejemplo
 
 \smallskip
 
@@ -734,7 +666,7 @@ x = x + 3
 
 \end{code}
 
-guarda el valor 9 en la variable \verb|x|. Como esta operación es tan común, Python ha creado un atajo. Las líneas anteriores de código se podrían haber escrito:
+guarda el valor 9 en la variable \verb|x|. Como esta operaciÃ³n es tan comÃºn, Python ha creado un atajo. Las lÃ­neas anteriores de cÃ³digo se podrÃ­an haber escrito:
 
 \smallskip
 
@@ -747,7 +679,7 @@ x += 2
 
 \end{code}
 
-El operador \verb|+=| se llama **suma en asignación**. Del mismo modo existe la resta en asignación:
+El operador \verb|+=| se llama **suma en asignaciÃ³n**. Del mismo modo existe la resta en asignaciÃ³n:
 
 \smallskip
 
@@ -762,7 +694,7 @@ x -= 4
 
 Ahora hemos guardado un 41 en la variable \verb|x|.
 
-En la siguiente tabla se presentan todos los operadores en asignación y se escribe su equivalencia utilizando el operador \verb|=|.
+En la siguiente tabla se presentan todos los operadores en asignaciÃ³n y se escribe su equivalencia utilizando el operador \verb|=|.
 
 \begin{center}
 \begin{tabular}{|l|l|l|}
@@ -779,7 +711,7 @@ Operador & Ejemplo & Equivale a: \\ \hline
 \end{center}
 
 
-Calcula el valor final de \verb|x| en el siguiente código:
+Calcula el valor final de \verb|x| en el siguiente cÃ³digo:
 
 \smallskip
 
@@ -794,14 +726,14 @@ x *= 4
 
 \end{code}
 
-\end{ejer}
 
 
-\begin{ejer}
 
-\subsection*{\dag{} Controlar los decimales}
 
-Cuando Python trabaja con decimales y los tiene que mostrar por pantalla con la orden \verb|print()| siempre muestra todos los decimales. Además de esto, como Python a veces se equivoca al hacer cuentas, esto provoca un exceso de decimales, como en el código:
+
+\noindent\textbf{\sffamily \dag{} Controlar los decimales}
+
+Cuando Python trabaja con decimales y los tiene que mostrar por pantalla con la orden \verb|print()| siempre muestra todos los decimales. AdemÃ¡s de esto, como Python a veces se equivoca al hacer cuentas, esto provoca un exceso de decimales, como en el cÃ³digo:
 
 \smallskip
 
@@ -815,7 +747,7 @@ print(f"La suma es {x + y}")
 
 \end{code}
 
-Si queremos controlar el número de decimales que presentamos por pantalla, debemos emplear un pequeño \guillemotleft truco\guillemotright. Prueba los siguientes códigos e intenta averiguar el \guillemotleft truco\guillemotright:
+Si queremos controlar el nÃºmero de decimales que presentamos por pantalla, debemos emplear un pequeÃ±o \guillemotleft truco\guillemotright. Prueba los siguientes cÃ³digos e intenta averiguar el \guillemotleft truco\guillemotright:
 
 \smallskip
 
@@ -823,99 +755,100 @@ Si queremos controlar el número de decimales que presentamos por pantalla, debem
 
 \begin{verbatim}
 x = 4.34514513451
-print(f"El número es {x :.2f}")
-print(f"El número es {x :.4f}")
-print(f"El número es {x :.0f}")
-print(f"El número es {x :.5f}")
+print(f"El nÃºmero es {x :.2f}")
+print(f"El nÃºmero es {x :.4f}")
+print(f"El nÃºmero es {x :.0f}")
+print(f"El nÃºmero es {x :.5f}")
 \end{verbatim}
 
 \end{code}
 
-El número $\pi$ comienza como 3.141592. Escribe el número $\pi$ con varios decimales. Comprueba si al hacer esto Python redondea los números o simplemente escribe menos decimales.
-
-\end{ejer}
+El nÃºmero $\pi$ comienza como 3.141592. Escribe el nÃºmero $\pi$ con varios decimales. Comprueba si al hacer esto Python redondea los nÃºmeros o simplemente escribe menos decimales.
 
 
 
-\chapter{Programas I}
+\newpage
 
-
-\begin{ejer}
-
-\subsubsection*{La suma de dos variables}
-
-El programa guarda dos números en variables y calcula su suma. 
-
-\end{ejer}
-
-\begin{ejer}
-
-\subsubsection*{El doble y el triple}
-
-Se introduce un número en una variable  y el programa calcula el doble y el triple del número.
-
-\end{ejer}
-
-\begin{ejer}
-
-\subsubsection*{Área de un rectángulo} 
-
-Un programa que calcule el área de un rectángulo.
-
-\end{ejer}
-
-\begin{ejer}
-
-\subsubsection*{Área y perímetro de un círculo}
-
- Calcula el área y el perímetro de un círculo. La fórmula del área es $\pi r^2$ y la del perímetro es  $ 2\pi r$.
-
-\end{ejer}
+\section{Programas I}
 
 
 
 
-\chapter{Programas II}
+\noindent\textbf{\sffamily La suma de dos variables}
+
+El programa guarda dos nÃºmeros en variables y calcula su suma. 
 
 
-\begin{ejer}
 
 
-\subsubsection*{De kilómetros a metros}
 
- Un programa que pase de kilómetros a metros.
+\noindent\textbf{\sffamily El doble y el triple}
 
-\end{ejer}
+Se introduce un nÃºmero en una variable  y el programa calcula el doble y el triple del nÃºmero.
 
-\begin{ejer}
 
-\subsubsection*{De pulgadas a centímetros}
 
- Un programa que pida una distancia en pulgadas y devuelva el resultado en centímetros. Debemos recordar que una pulgada son 2.54 cm.
 
-\end{ejer}
 
-\begin{ejer}
+\noindent\textbf{\sffamily Ãrea de un rectÃ¡ngulo} 
 
-\subsubsection*{Cociente y resto} 
+Un programa que calcule el Ã¡rea de un rectÃ¡ngulo.
+
+
+
+
+
+\noindent\textbf{\sffamily Ãrea y perÃ­metro de un cÃ­rculo}
+
+ Calcula el Ã¡rea y el perÃ­metro de un cÃ­rculo. La fÃ³rmula del Ã¡rea es $\pi r^2$ y la del perÃ­metro es  $ 2\pi r$.
+
+
+
+\newpage
+
+
+\section{Programas II}
+
+
+
+
+
+\noindent\textbf{\sffamily De kilÃ³metros a metros}
+
+ Un programa que pase de kilÃ³metros a metros.
+
+
+
+
+
+\noindent\textbf{\sffamily De pulgadas a centÃ­metros}
+
+ Un programa que pida una distancia en pulgadas y devuelva el resultado en centÃ­metros. Debemos recordar que una pulgada son 2.54 cm.
+
+
+
+
+
+\noindent\textbf{\sffamily Cociente y resto} 
 
 Un programa donde se introduce el dividendo y el divisor y devuelva el cociente y el resto.
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{De grados centígrados a Farenheit} 
+
+
+\noindent\textbf{\sffamily De grados centÃ­grados a Farenheit} 
 
 Un programa que pida la temperatura en grados centigrados y los transforme en grados Farenheit. Para convertir  grados centigrados en Farenheit debemos multiplicar por 9 y dividir en 5. A este resultado se le debe sumar 32.
 
-\end{ejer}
 
-\chapter{Cadenas I}
+\newpage
 
-\begin{ejer}
+\section{Cadenas I}
 
-\subsubsection*{Guardar cadenas en variables}
+
+
+\noindent\textbf{\sffamily Guardar cadenas en variables}
 
 
 Guarda tu nombre en una variable llamada \verb|nombre| y tu apellido en una cadena llamada `apellido`. 
@@ -928,30 +861,30 @@ Guarda tu nombre en una variable llamada \verb|nombre| y tu apellido en una cade
 
 \end{itemize}
 
-\end{ejer}
 
 
-\begin{ejer}
-
-\subsubsection*{Longitud de una cadena}
-
-Convierte el número $2^{50}$ a cadena y con la función \verb|len()| calcula el número de dígitos que tiene.
 
 
-\end{ejer}
 
-\begin{ejer}
+\noindent\textbf{\sffamily Longitud de una cadena}
 
-\subsubsection*{\dag{} Poner en mayúsculas y minúscula una cadena}
+Convierte el nÃºmero $2^{50}$ a cadena y con la funciÃ³n \verb|len()| calcula el nÃºmero de dÃ­gitos que tiene.
 
-Prueba los siguientes códigos, para entender como funcionan algunos métodos que se pueden aplicar a cadenas:
+
+
+
+
+
+\noindent\textbf{\sffamily \dag{} Poner en mayÃºsculas y minÃºscula una cadena}
+
+Prueba los siguientes cÃ³digos, para entender como funcionan algunos mÃ©todos que se pueden aplicar a cadenas:
 
 \smallskip
 
 \begin{code}
 
 \begin{verbatim}
-s = "En un lugar de la Mancha de cuyo nombre no quiero ..."
+s = "En un lugar de la Mancha de cuyo nombre ..."
 s.upper()
 \end{verbatim}
 
@@ -963,7 +896,7 @@ s.upper()
 \begin{code}
 
 \begin{verbatim}
-s = "En un lugar de la Mancha de cuyo nombre no quiero ..."
+s = "En un lugar de la Mancha de cuyo nombre ..."
 s.lower()
 \end{verbatim}
 
@@ -974,22 +907,22 @@ s.lower()
 \begin{code}
 
 \begin{verbatim}
-s = "En un lugar de la Mancha de cuyo nombre no quiero ..."
+s = "En un lugar de la Mancha de cuyo nombre ..."
 s.title()
 \end{verbatim}
 
 \end{code}
 
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsubsection*{\dag{}  Escribir carácteres que no aparecen en el teclado}
 
-Para realizar este ejercicio debemos consultar en Internet las tablas Unicode. Cada carácter tiene asociado un número. Podemos escribir, de una forma un poco extraña, cualquier carácter. Prueba los siguientes códigos:
 
-(Si alguna vez no aparece la letra correspondiente prueba a escribir dicha cadena dentro de una función \verb|print()|.)
+\noindent\textbf{\sffamily \dag{}  Escribir carÃ¡cteres que no aparecen en el teclado}
+
+Para realizar este ejercicio debemos consultar en Internet las tablas Unicode. Cada carÃ¡cter tiene asociado un nÃºmero. Podemos escribir, de una forma un poco extraÃ±a, cualquier carÃ¡cter. Prueba los siguientes cÃ³digos:
+
+(Si alguna vez no aparece la letra correspondiente prueba a escribir dicha cadena dentro de una funciÃ³n \verb|print()|.)
 
 \smallskip
 
@@ -1002,36 +935,36 @@ Para realizar este ejercicio debemos consultar en Internet las tablas Unicode. C
 
 \end{code}
 
-\end{ejer}
+
+\newpage
+
+\section{Cadenas II}
 
 
-\chapter{Cadenas II}
 
 
-\begin{ejer}
+\noindent\textbf{\sffamily Acceder a distintos caracteres de una cadena}
 
-\subsubsection*{Acceder a distintos caracteres de una cadena}
-
-Considera la cadena \verb|Hola mundo|.  Accede al primer y el último caracter utilizando índice positivos. Accede también utilizando índice negativos.
+Considera la cadena \verb|Hola mundo|.  Accede al primer y el Ãºltimo caracter utilizando Ã­ndice positivos. Accede tambiÃ©n utilizando Ã­ndice negativos.
 
 
-\end{ejer}
-
-\begin{ejer}
-
-\subsubsection*{Slicing con cadenas}
-
-Dada la cadena \verb|Física y Química|, almacenada en una variable `dato` extrae la subcadena \verb|Física| y la subcadena \verb|Química|.
 
 
-\end{ejer}
-
-\begin{ejer}
 
 
-\subsubsection*{\dag{} Dar la vuelta a una cadena}
+\noindent\textbf{\sffamily Slicing con cadenas}
 
-Dada la variable \verb|dato| del ejercicio anterior, prueba el siguiente código:
+Dada la cadena \verb|FÃ­sica y QuÃ­mica|, almacenada en una variable `dato` extrae la subcadena \verb|FÃ­sica| y la subcadena \verb|QuÃ­mica|.
+
+
+
+
+
+
+
+\noindent\textbf{\sffamily \dag{} Dar la vuelta a una cadena}
+
+Dada la variable \verb|dato| del ejercicio anterior, prueba el siguiente cÃ³digo:
 
 \smallskip
 
@@ -1043,15 +976,15 @@ dato[ : : -1]
 
 \end{code}
 
-\end{ejer}
+
+\newpage
+
+\section{Operadores relacionales}
 
 
-\chapter{Operadores relacionales}
+\noindent\textbf{\sffamily Operadores relacionales y variables}
 
 
-\subsubsection*{Operadores relacionales y variables}
-
-\begin{ejer}
 
 Supongamos a lo largo del ejercicio que hemos declarado las siguientes variables:
 
@@ -1068,9 +1001,9 @@ d = 1
 
 \end{code}
 
-\end{ejer}
 
-\begin{ejer}
+
+
 
 Realiza, una a una, las siguientes comparaciones, intentado adivinar el resultado antes que Python:
 
@@ -1091,14 +1024,14 @@ d != b
 
 \end{code}
 
-\end{ejer}
-
-\begin{ejer}
 
 
-\subsubsection*{Guardar resultados de comparaciones en variables}
 
-Adivinar el valor guardado en la variable \verb|aprobado| después de ejecutar el código:
+
+
+\noindent\textbf{\sffamily Guardar resultados de comparaciones en variables}
+
+Adivinar el valor guardado en la variable \verb|aprobado| despuÃ©s de ejecutar el cÃ³digo:
 
 \smallskip
 
@@ -1113,9 +1046,9 @@ aprobado = nota > media
 \end{code}
 
 
-\subsubsection*{Prioridad de los operadores aritméticos}
+\noindent\textbf{\sffamily Prioridad de los operadores aritmÃ©ticos}
 
-Adivinar el resultado de la siguiente comparación y comprobar resultados en Python.
+Adivinar el resultado de la siguiente comparaciÃ³n y comprobar resultados en Python.
 
 \smallskip
 
@@ -1127,14 +1060,14 @@ Adivinar el resultado de la siguiente comparación y comprobar resultados en Pyth
 
 \end{code}
 
-\end{ejer}
-
-\begin{ejer}
 
 
-\subsubsection*{Un resultado inesperado}
 
-Adivinar el resultado de la siguiente comparación. Comprueba con Python. Si el resultado no es el esperado intenta ver la razón.
+
+
+\noindent\textbf{\sffamily Un resultado inesperado}
+
+Adivinar el resultado de la siguiente comparaciÃ³n. Comprueba con Python. Si el resultado no es el esperado intenta ver la razÃ³n.
 
 
 \smallskip
@@ -1147,14 +1080,14 @@ Adivinar el resultado de la siguiente comparación. Comprueba con Python. Si el r
 
 \end{code}
 
-\textbf{No es buena idea utilizar el operador == cuando se trabaja con números reales.}
-
-\end{ejer}
-
-\begin{ejer}
+\textbf{No es buena idea utilizar el operador == cuando se trabaja con nÃºmeros reales.}
 
 
-\subsubsection*{El orden alfabético}
+
+
+
+
+\noindent\textbf{\sffamily El orden alfabÃ©tico}
 
 Adivinar el resultado de las siguientes comparaciones y comprobar resultados en Python.
 
@@ -1171,14 +1104,14 @@ Adivinar el resultado de las siguientes comparaciones y comprobar resultados en 
 
 \end{code}
 
-\end{ejer}
-
-\begin{ejer}
 
 
-\subsubsection*{\dag{} El número asociado a cada letra o caracter}
 
- Todo caracter tiene asociado un número. En particular todas las letras tienen asociado un número. Para conocer el número asociado se utiliza la función \verb|ord()|. Prueba los siguientes códigos:
+
+
+\noindent\textbf{\sffamily \dag{} El nÃºmero asociado a cada letra o caracter}
+
+ Todo caracter tiene asociado un nÃºmero. En particular todas las letras tienen asociado un nÃºmero. Para conocer el nÃºmero asociado se utiliza la funciÃ³n \verb|ord()|. Prueba los siguientes cÃ³digos:
 
 \smallskip
 
@@ -1190,19 +1123,19 @@ ord(b)
 ord(z)
 ord(A)
 ord(B)
-ord(ñ)
+ord(Ã±)
 \end{verbatim}
 
 \end{code}
 
-\end{ejer}
-
-\begin{ejer}
 
 
-\subsubsection*{\dag{}  El caracter asociado a un número}
 
-A la inversa, muchos números enteros tienen asociado un caracter. Para obtener dicho caracter utilizamos la función \verb|chr()|. Prueba los siguientes códigos:
+
+
+\noindent\textbf{\sffamily \dag{}  El caracter asociado a un nÃºmero}
+
+A la inversa, muchos nÃºmeros enteros tienen asociado un caracter. Para obtener dicho caracter utilizamos la funciÃ³n \verb|chr()|. Prueba los siguientes cÃ³digos:
 
 \smallskip
 
@@ -1217,17 +1150,17 @@ print(chr(4456))
 
 \end{code}
 
-Para entender completamente estos ejercicios se debe conocer a fondo la codificación de los caracteres, en particular es conveniente conocer la codificación ASCII y Unicode.
+Para entender completamente estos ejercicios se debe conocer a fondo la codificaciÃ³n de los caracteres, en particular es conveniente conocer la codificaciÃ³n ASCII y Unicode.
 
 
-\end{ejer}
-
-\begin{ejer}
 
 
-\subsubsection*{ \dag{} El orden en las letras}
 
-En realidad Python compara números y no caracteres. Para saber si un caracter es menor que otro en realidad debemos fijarnos en su número asociado. Con lo visto en los ejercicios anteriores intenta predecir el resultado de la comparaciones:
+
+
+\noindent\textbf{\sffamily  \dag{} El orden en las letras}
+
+En realidad Python compara nÃºmeros y no caracteres. Para saber si un caracter es menor que otro en realidad debemos fijarnos en su nÃºmero asociado. Con lo visto en los ejercicios anteriores intenta predecir el resultado de la comparaciones:
 
 \smallskip
 
@@ -1235,20 +1168,20 @@ En realidad Python compara números y no caracteres. Para saber si un caracter es
 
 \begin{verbatim}
 'a' < 'A'
-'z' < 'ñ'
+'z' < 'Ã±'
 'B' < 'a'
 \end{verbatim}
 
 \end{code}
 
-\end{ejer}
-
-\begin{ejer}
 
 
-\subsubsection*{\dag{} Comparación de cadenas}
 
- Para comparar palabras Python compara la primera letra. Si la primera letra coincide, pasa a la segunda, etc. Comprueba los códigos:
+
+
+\noindent\textbf{\sffamily \dag{} ComparaciÃ³n de cadenas}
+
+ Para comparar palabras Python compara la primera letra. Si la primera letra coincide, pasa a la segunda, etc. Comprueba los cÃ³digos:
 
 
 
@@ -1263,142 +1196,143 @@ En realidad Python compara números y no caracteres. Para saber si un caracter es
 
 \end{code}
 
-\end{ejer}
+
+\newpage
 
 
-\chapter{Tipos de datos}
+\section{Tipos de datos}
 
 
 
-\begin{ejer}
 
-\subsection*{Guardar y comprobar el tipo}
+
+\noindent\textbf{\sffamily Guardar y comprobar el tipo}
 
 Guarda tu nombre en una variable llamada \verb|nombre|. Pregunta por el tipo de dato de la variable.
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsection*{El tipo de una división}
 
-Guarda en una variable el resultado de la división de 4 entre 2. Comprueba que el de tipo \verb|float|. El resultado de una división es siempre un número de tipo \verb|float|.
 
-\end{ejer}
+\noindent\textbf{\sffamily El tipo de una divisiÃ³n}
 
-\begin{ejer}
+Guarda en una variable el resultado de la divisiÃ³n de 4 entre 2. Comprueba que el de tipo \verb|float|. El resultado de una divisiÃ³n es siempre un nÃºmero de tipo \verb|float|.
 
-\subsection*{El tipo del cociente de enteros}
 
-Calcula el cociente de la división de 4 entre 2. Comprueba su tipo.
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsection*{El tipo de \textit{True} y \textit{ False}}
+\noindent\textbf{\sffamily El tipo del cociente de enteros}
+
+Calcula el cociente de la divisiÃ³n de 4 entre 2. Comprueba su tipo.
+
+
+
+
+
+\noindent\textbf{\sffamily El tipo de \textit{True} y \textit{ False}}
 
 Calcula el tipo de \verb|True|.
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsection*{El tipo de las comparaciones}
 
-Guarda en una variable el resultado de la comparación \verb|3 < 5|.  Comprueba qué contiene dicha variable (con \verb|print()|)  y mira que tipo de dato contiene.
 
-\end{ejer}
+\noindent\textbf{\sffamily El tipo de las comparaciones}
 
-\begin{ejer}
+Guarda en una variable el resultado de la comparaciÃ³n \verb|3 < 5|.  Comprueba quÃ© contiene dicha variable (con \verb|print()|)  y mira que tipo de dato contiene.
 
-\subsection*{Python es un lenguaje de tipado dinámico}
 
-Guarda en un variable un tipo entero. Comprueba su tipo. Después guarda en la variable un tipo \verb|float| y comprueba su tipo. Por último guarda una cadena y comprueba su tipo.
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsection*{\dag{} El tipo complejo}
+\noindent\textbf{\sffamily Python es un lenguaje de tipado dinÃ¡mico}
+
+Guarda en un variable un tipo entero. Comprueba su tipo. DespuÃ©s guarda en la variable un tipo \verb|float| y comprueba su tipo. Por Ãºltimo guarda una cadena y comprueba su tipo.
+
+
+
+
+
+\noindent\textbf{\sffamily \dag{} El tipo complejo}
 
  Guarda en una variable llamada \verb|complejo| el valor \verb|1j|. Comprueba cual es su tipo de dato.
 
 Calcula el cuadrado de dicha variable.
 
-\end{ejer}
+
+\newpage
+
+\section{Entrada por teclado}
 
 
-\chapter{Entrada por teclado}
 
 
 
-\begin{ejer}
+\noindent\textbf{\sffamily  Pedir el nombre y la edad}
 
-\subsubsection*{ Pedir el nombre y la edad}
-
-Un programa que pida el nombre y la edad del usuario y que dé una respuesta similar a:
-
-\smallskip
-
-\begin{code}
-
-\begin{verbatim}
-Me llamo Joaquín y tengo 34 años.
-\end{verbatim}
-
-\end{code}
-
-\end{ejer}
-
-\begin{ejer}
-
-\subsubsection*{Pedir dos números y realizar cuatro operaciones}
-
-El programa debe de pedir dos números (en principio valen números decimales) y el programa debe calcular su suma, su resta, su multiplicación y su división y devolverlas por pantalla.
-
-
-\end{ejer}
-
-\begin{ejer}
-
-\subsubsection*{Área  y perímetro de un rectángulo}
-
-El programa debe de pedir la base y la altura de un rectángulo y calcular el área y el perímetro del rectángulo.
-
-
-\end{ejer}
-
-\begin{ejer}
-
-\subsubsection*{Usar variables dentro de la función \textit{input()}}
-
-Podemos usar variables dentro de la función \verb|input()| usando \textit{f-strings}. Analiza el siguiente código, que pide dos números distintos al usuario:
+Un programa que pida el nombre y la edad del usuario y que dÃ© una respuesta similar a:
 
 \smallskip
 
 \begin{code}
 
 \begin{verbatim}
-num1 = int(input(f"Dime un número entero: )")
-num2 = int(input(f"Dime un número distinto a {num1}. "))
+Me llamo JoaquÃ­n y tengo 34 aÃ±os.
 \end{verbatim}
 
 \end{code}
 
-\end{ejer}
-
-
-\chapter{Condicionales I}
 
 
 
-\begin{ejer}
+
+\noindent\textbf{\sffamily Pedir dos nÃºmeros y realizar cuatro operaciones}
+
+El programa debe de pedir dos nÃºmeros (en principio valen nÃºmeros decimales) y el programa debe calcular su suma, su resta, su multiplicaciÃ³n y su divisiÃ³n y devolverlas por pantalla.
 
 
-\subsection*{Fallo de indentación}
 
-Si después de los dos puntos no dejamos indentación, se produce un error. Prueba el siguiente código:
+
+
+
+\noindent\textbf{\sffamily Ãrea  y perÃ­metro de un rectÃ¡ngulo}
+
+El programa debe de pedir la base y la altura de un rectÃ¡ngulo y calcular el Ã¡rea y el perÃ­metro del rectÃ¡ngulo.
+
+
+
+
+
+
+\noindent\textbf{\sffamily Usar variables dentro de la funciÃ³n \textit{input()}}
+
+Podemos usar variables dentro de la funciÃ³n \verb|input()| usando \textit{f-strings}. Analiza el siguiente cÃ³digo, que pide dos nÃºmeros distintos al usuario:
+
+\smallskip
+
+\begin{code}
+
+\begin{verbatim}
+num1 = int(input(f"Dime un nÃºmero entero: )")
+num2 = int(input(f"Dime un nÃºmero distinto a {num1}. "))
+\end{verbatim}
+
+\end{code}
+
+
+\newpage
+
+\section{Condicionales I}
+
+
+
+
+
+
+\noindent\textbf{\sffamily Fallo de indentaciÃ³n}
+
+Si despuÃ©s de los dos puntos no dejamos indentaciÃ³n, se produce un error. Prueba el siguiente cÃ³digo:
 
 \smallskip
 
@@ -1411,15 +1345,15 @@ print("Esto es un error")
 
 \end{code}
 
-\end{ejer}
-
-\begin{ejer}
 
 
 
-\subsection*{Fallo de indentación}
 
-Si dentro del bloque del \verb|if| tenemos indentaciones distintas, también tenemos un error:
+
+
+\noindent\textbf{\sffamily Fallo de indentaciÃ³n}
+
+Si dentro del bloque del \verb|if| tenemos indentaciones distintas, tambiÃ©n tenemos un error:
 
 \smallskip
 
@@ -1428,19 +1362,19 @@ Si dentro del bloque del \verb|if| tenemos indentaciones distintas, también tene
 \begin{verbatim}
 if True:
 	print("Hola")
-		print("Adiós")
+		print("AdiÃ³s")
 \end{verbatim}
 
 \end{code}
 
-\end{ejer}
-
-\begin{ejer}
 
 
-\subsection*{Cambiar dos \textit{if} por un  \textit{else...if}}
 
-El siguiente programa funciona perfectamente. Haz una versión similar utilizando \verb|else|:
+
+
+\noindent\textbf{\sffamily Cambiar dos \textit{if} por un  \textit{else...if}}
+
+El siguiente programa funciona perfectamente. Haz una versiÃ³n similar utilizando \verb|else|:
 
 \smallskip
 
@@ -1457,14 +1391,14 @@ if edad < 18:
 
 \end{code}
 
-\end{ejer}
-
-\begin{ejer}
 
 
-\subsection*{Error semántico}
 
-El siguiente programa no tiene errores de sintaxis, pero sin embargo tiene un error semántico (no hace lo que queremos que haga). Localiza el error:
+
+
+\noindent\textbf{\sffamily Error semÃ¡ntico}
+
+El siguiente programa no tiene errores de sintaxis, pero sin embargo tiene un error semÃ¡ntico (no hace lo que queremos que haga). Localiza el error:
 
 \smallskip
 
@@ -1481,111 +1415,111 @@ if edad <= 18
 
 \end{code}
 
-\end{ejer}
-
-\begin{ejer}
 
 
 
-\subsection*{Problema}
-
-Se pide un número al usuario. Si el número es mayor que cero el programa responde \guillemotleft El número es mayor que cero\guillemotright. En caso contrario debe responder \guillemotleft Este número no es mayor que cero\guillemotright.
 
 
-\end{ejer}
 
-\begin{ejer}
+\noindent\textbf{\sffamily Problema}
+
+Se pide un nÃºmero al usuario. Si el nÃºmero es mayor que cero el programa responde \guillemotleft El nÃºmero es mayor que cero\guillemotright. En caso contrario debe responder \guillemotleft Este nÃºmero no es mayor que cero\guillemotright.
 
 
-\subsection*{Problema}
+
+
+
+
+
+\noindent\textbf{\sffamily Problema}
 
 Un programa pide el nombre de una persona. Si el nombre es \guillemotleft Javier\guillemotright{} el programa responde \guillemotleft Eres un pro\guillemotright. Para cualquier otro nombre debe responder \guillemotleft Tu no eres un pro\guillemotright.
 
-\end{ejer}
-
-\begin{ejer}
 
 
-\subsection*{Problema}
+
+
+
+\noindent\textbf{\sffamily Problema}
 
 Un programa pide la nota. Si la nota es mayor o igual que 5 responde \guillemotleft Has aprobado\guillemotright. Si no ocurre esto responde \guillemotleft Has suspendido\guillemotright.
 
-\end{ejer}
-
-\begin{ejer}
-
-
-\subsection*{Problema}
-
-
-Se pide un número entero al usuario. Se calcula el resto de dicho número entre dos. Si el resto es cero, el programa responde \guillemotleft El número es par\guillemotleft. Si el resto no es cero el programa responde \guillemotleft El número es impar\guillemotright.
-
-\end{ejer}
-
-\begin{ejer}
-
-
-\subsection*{Problema}
-
-Se pide un número al usuario y se le dice si el número es múltiplo de tres o no lo es.
-
-\end{ejer}
-
-\begin{ejer}
 
 
 
-\subsection*{Problema}
-
-Haz un programa que pida dos números cuya multiplicación sea 12. Si el producto da 12 debe responder \guillemotleft Has acertado\guillemotright. En caso contrario debe responder `Has fallado`. Realiza una versión del programa utilizando \guillemotleft else\guillemotright{}  y otra sin utilizarlo.
-
-\end{ejer}
-
-\begin{ejer}
 
 
-\subsection*{Problema}
-
-Se piden dos números enteros distintos. El programa debe responder si es mayor el primer número o es mayor el segundo número.
-
-\end{ejer}
+\noindent\textbf{\sffamily Problema}
 
 
-\chapter{Condicionales II}
+Se pide un nÃºmero entero al usuario. Se calcula el resto de dicho nÃºmero entre dos. Si el resto es cero, el programa responde \guillemotleft El nÃºmero es par\guillemotleft. Si el resto no es cero el programa responde \guillemotleft El nÃºmero es impar\guillemotright.
 
 
 
-\begin{ejer}
-
-\subsection*{Problema}
 
 
-Si piden dos números. El programa debe responder si el primero es el mayor, si es mayor el segundo o si los dos son iguales. Haz una versión sin utilizar \verb|elif| y otra utilizándolo.
 
-\end{ejer}
+\noindent\textbf{\sffamily Problema}
 
-\begin{ejer}
-
-
-\subsection*{Problema}
-
-Se pide la nota de tres asignaturas. Si la media de las notas es mayor que 8, entonces el programa responde \guillemotleft Eres un pro\guillemotright. En otro caso debe responder \guillemotleft Tienes que trabajar más para ser un pro\guillemotright.
-
-\end{ejer}
-
-\begin{ejer}
+Se pide un nÃºmero al usuario y se le dice si el nÃºmero es mÃºltiplo de tres o no lo es.
 
 
-\subsection*{Problema}
-
-Un programa que pida la edad de una persona. Si la edad es mayor que 20 años, el programa debe responder \guillemotleft Eres muy viejo\guillemotright. Si no es mayor de 20 el programa no debe responder nada.
-
-\end{ejer}
-
-\begin{ejer}
 
 
-\subsection*{\textit{If} anidado}
+
+
+
+\noindent\textbf{\sffamily Problema}
+
+Haz un programa que pida dos nÃºmeros cuya multiplicaciÃ³n sea 12. Si el producto da 12 debe responder \guillemotleft Has acertado\guillemotright. En caso contrario debe responder `Has fallado`. Realiza una versiÃ³n del programa utilizando \guillemotleft else\guillemotright{}  y otra sin utilizarlo.
+
+
+
+
+
+
+\noindent\textbf{\sffamily Problema}
+
+Se piden dos nÃºmeros enteros distintos. El programa debe responder si es mayor el primer nÃºmero o es mayor el segundo nÃºmero.
+
+
+\newpage
+
+\section{Condicionales II}
+
+
+
+
+
+\noindent\textbf{\sffamily Problema}
+
+
+Si piden dos nÃºmeros. El programa debe responder si el primero es el mayor, si es mayor el segundo o si los dos son iguales. Haz una versiÃ³n sin utilizar \verb|elif| y otra utilizÃ¡ndolo.
+
+
+
+
+
+
+\noindent\textbf{\sffamily Problema}
+
+Se pide la nota de tres asignaturas. Si la media de las notas es mayor que 8, entonces el programa responde \guillemotleft Eres un pro\guillemotright. En otro caso debe responder \guillemotleft Tienes que trabajar mÃ¡s para ser un pro\guillemotright.
+
+
+
+
+
+
+\noindent\textbf{\sffamily Problema}
+
+Un programa que pida la edad de una persona. Si la edad es mayor que 20 aÃ±os, el programa debe responder \guillemotleft Eres muy viejo\guillemotright. Si no es mayor de 20 el programa no debe responder nada.
+
+
+
+
+
+
+\noindent\textbf{\sffamily \textit{If} anidado}
 
 Da un valor entero a la variable para que el siguiente programa imprima la palabra \guillemotleft Hola\guillemotright.
 
@@ -1603,28 +1537,28 @@ if numero > 3:
 \end{code}
 
 
-¿Cuántos números enteros resuelven el problema anterior?
+Â¿CuÃ¡ntos nÃºmeros enteros resuelven el problema anterior?
 
 
-\end{ejer}
+\newpage
 
-\chapter{Condicionales III}
+\section{Condicionales III}
 
 
 
-\begin{ejer}
 
-\subsection*{Problema}
 
-Realiza un programa que diga si una persona es mayor de edad o no. Además debe comprobar primero si la persona tiene más de cero años.
+\noindent\textbf{\sffamily Problema}
 
-\end{ejer}
+Realiza un programa que diga si una persona es mayor de edad o no. AdemÃ¡s debe comprobar primero si la persona tiene mÃ¡s de cero aÃ±os.
 
-\begin{ejer}
 
-\subsection*{Detectar error semántico}
 
-El siguiente programa tiene errores de tipo semántico. Localízalos y arregla el programa:
+
+
+\noindent\textbf{\sffamily Detectar error semÃ¡ntico}
+
+El siguiente programa tiene errores de tipo semÃ¡ntico. LocalÃ­zalos y arregla el programa:
 
 \smallskip
 
@@ -1646,43 +1580,43 @@ else:
 
 \end{code}
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsection*{Problema}
 
-Un programa pide un número entero entre el 1 y el 3, ambos inclusive. Si se teclea \verb|1| el programa responde \guillemotleft Primero\guillemotright. Si se teclea un \verb|2| el programa responde \guillemotleft Segundo\guillemotright{} y análogamente con el \verb|3|. Si no es ninguno de esos tres números, entonces debe responder \guillemotleft Número incorrecto\guillemotright.
 
-\end{ejer}
+\noindent\textbf{\sffamily Problema}
 
-\begin{ejer}
-
-\subsection*{Problema}
-
-Un programa pregunta por el dinero que tienes. Si la respuesta es mayor de 1 millón, el programa responde \guillemotleft Eres rico\guillemotright. Si tiene más de 30000 euros entonces debe responder \guillemotleft Clase media\guillemotright. En otro caso debe responder \guillemotleft Clase baja\guillemotright.
-
-\end{ejer}
+Un programa pide un nÃºmero entero entre el 1 y el 3, ambos inclusive. Si se teclea \verb|1| el programa responde \guillemotleft Primero\guillemotright. Si se teclea un \verb|2| el programa responde \guillemotleft Segundo\guillemotright{} y anÃ¡logamente con el \verb|3|. Si no es ninguno de esos tres nÃºmeros, entonces debe responder \guillemotleft NÃºmero incorrecto\guillemotright.
 
 
 
 
 
-\chapter{Operadores lógicos}
+\noindent\textbf{\sffamily Problema}
+
+Un programa pregunta por el dinero que tienes. Si la respuesta es mayor de 1 millÃ³n, el programa responde \guillemotleft Eres rico\guillemotright. Si tiene mÃ¡s de 30000 euros entonces debe responder \guillemotleft Clase media\guillemotright. En otro caso debe responder \guillemotleft Clase baja\guillemotright.
 
 
-\begin{ejer}
 
-\subsection*{Tabla de verdad del operador \textit{and}}
+
+\newpage
+
+
+\section{Operadores lÃ³gicos}
+
+
+
+
+\noindent\textbf{\sffamily Tabla de verdad del operador \textit{and}}
 
 
 Calcula la tabla de verdad del operador \verb|and|.
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsection*{Traducir al lenguaje Python}
+
+
+\noindent\textbf{\sffamily Traducir al lenguaje Python}
 
 Traducir la siguiente frase a Python:
 
@@ -1696,13 +1630,13 @@ Traducir la siguiente frase a Python:
 
 \end{code}
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsection*{Traducir}
 
-Sea \verb|p| la variable que contiene la frase \guillemotleft El sol es una estrella\guillemotright , y \verb|q| la variable que contiene \guillemotleft La tierra es un planeta\guillemotright. Traduce al lenguaje español las siguientes expresiones:
+
+\noindent\textbf{\sffamily Traducir}
+
+Sea \verb|p| la variable que contiene la frase \guillemotleft El sol es una estrella\guillemotright , y \verb|q| la variable que contiene \guillemotleft La tierra es un planeta\guillemotright. Traduce al lenguaje espaÃ±ol las siguientes expresiones:
 
 \smallskip
 
@@ -1717,11 +1651,11 @@ p and not q
 
 \end{code}
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsection*{Traducir}
+
+
+\noindent\textbf{\sffamily Traducir}
 
 Sea \verb|x| una variable. Traduce a Python las frases:
 
@@ -1737,21 +1671,21 @@ Sea \verb|x| una variable. Traduce a Python las frases:
 
 Comprueba dichas traducciones dando distintos valores a la variable \verb|x|.
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsection*{Traducir}
 
-Una persona es adolescente si tiene entre 12 y 18 años. Utiliza una variable \verb|edad| y crea una expresión que sea verdadera únicamente para los adolescentes.
 
-\end{ejer}
+\noindent\textbf{\sffamily Traducir}
 
-\begin{ejer}
+Una persona es adolescente si tiene entre 12 y 18 aÃ±os. Utiliza una variable \verb|edad| y crea una expresiÃ³n que sea verdadera Ãºnicamente para los adolescentes.
 
-\subsection*{Operación combinada}
 
-Realiza paso a paso la operación lógica combinada:
+
+
+
+\noindent\textbf{\sffamily OperaciÃ³n combinada}
+
+Realiza paso a paso la operaciÃ³n lÃ³gica combinada:
 
 \smallskip
 
@@ -1763,16 +1697,16 @@ True and False or not True
 
 \end{code}
 
-\end{ejer}
 
 
-\begin{ejer}
 
-\subsection*{\dag{}  Otra forma de realizar los operadores booleanos}
 
-Aunque la forma normal de realizar los operadores booleanos es utilizar las palabras clave \verb|and| y \verb|or| también se pueden realizar con otros operadores. Para hacer la operación \verb|and| podemos usar \verb|&|  y para el \verb|or| el caracter \verb@|@.
 
-Calcula todas las tablas de verdad de estas operaciones. Como ejemplo tenemos el código:
+\noindent\textbf{\sffamily \dag{}  Otra forma de realizar los operadores booleanos}
+
+Aunque la forma normal de realizar los operadores booleanos es utilizar las palabras clave \verb|and| y \verb|or| tambiÃ©n se pueden realizar con otros operadores. Para hacer la operaciÃ³n \verb|and| podemos usar \verb|&|  y para el \verb|or| el caracter \verb@|@.
+
+Calcula todas las tablas de verdad de estas operaciones. Como ejemplo tenemos el cÃ³digo:
 
 \smallskip
 
@@ -1786,13 +1720,13 @@ True | False   # Equivale a True or False
 \end{code}
 
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsection*{El operador `xor`}
 
-La operación \verb|xor| es otra operación entre valores lógicos. Se suele denominar \textbf{o exclusiva}   pues cuando los dos valores son ciertos entonces devuelve \verb|False|. El operador para realizarla es el circunfleno \verb|^|.
+
+\noindent\textbf{\sffamily El operador `xor`}
+
+La operaciÃ³n \verb|xor| es otra operaciÃ³n entre valores lÃ³gicos. Se suele denominar \textbf{o exclusiva}   pues cuando los dos valores son ciertos entonces devuelve \verb|False|. El operador para realizarla es el circunfleno \verb|^|.
 
 \smallskip
 
@@ -1807,14 +1741,14 @@ True ^ False  # Se lee: True xor False
 Calcula la tabla de verdad de este operador.
 
 
-\end{ejer}
 
 
-\begin{ejer}
 
-\subsection*{\dag{} Un atajo para los condicionales}
 
-Dadas tres variables es muy común, tanto en matemáticas como en Python hacer el siguiente tipo de comparaciones:
+
+\noindent\textbf{\sffamily \dag{} Un atajo para los condicionales}
+
+Dadas tres variables es muy comÃºn, tanto en matemÃ¡ticas como en Python hacer el siguiente tipo de comparaciones:
 
 \smallskip
 
@@ -1826,7 +1760,7 @@ x < y and y < z
 
 \end{code}
 
-Estamos comprobando si la variable \verb|y| está entre las otras dos variables. Esto se suele escribir en matemáticas y también en Python con la siguiente notación, más compacta:
+Estamos comprobando si la variable \verb|y| estÃ¡ entre las otras dos variables. Esto se suele escribir en matemÃ¡ticas y tambiÃ©n en Python con la siguiente notaciÃ³n, mÃ¡s compacta:
 
 \smallskip
 
@@ -1838,7 +1772,7 @@ x < y < z
 
 \end{code}
 
-Además de con el operador \verb|<| existe otros atajos con el resto de operadores relacionales.
+AdemÃ¡s de con el operador \verb|<| existe otros atajos con el resto de operadores relacionales.
 
 Encontrar todos los valores enteros de la variable \verb|y| que hacen que el siguiente programa tenga \verb|True| como resultado:
 
@@ -1856,43 +1790,43 @@ x <= y <= z
 
 \end{code}
 
-\end{ejer}
+\newpage
 
-\chapter{Condicionales IV}
-
-\begin{ejer}
-
-\subsection*{Problema}
-
-Para ser directivo de una empresa debes tener más de 25 años y además más de 30000 euros. Haz un programa que pida la edad y el dinero y que responda si puedes ser directivo de esa empresa.
-
-\end{ejer}
-
-\begin{ejer}
-
-\subsection*{Problema}
-
-Para ir a un viaje a Canarias tienes que tener más de 65 años o tener más de 1000 euros. El programa pregunta la edad y el dinero y debe responder si puedes ir o no a Canarias.
-
-\end{ejer}
+\section{Condicionales IV}
 
 
-\chapter{Listas I}
+
+\noindent\textbf{\sffamily Problema}
+
+Para ser directivo de una empresa debes tener mÃ¡s de 25 aÃ±os y ademÃ¡s mÃ¡s de 30000 euros. Haz un programa que pida la edad y el dinero y que responda si puedes ser directivo de esa empresa.
 
 
 
 
-\begin{ejer}
 
-\subsection*{Acceder a elementos de una lista}
+\noindent\textbf{\sffamily Problema}
 
-Dada la lista \verb|a = [4, 6, 7, 8]| accede a distintos elementos utilizando tanto índices positivos como negativos.
+Para ir a un viaje a Canarias tienes que tener mÃ¡s de 65 aÃ±os o tener mÃ¡s de 1000 euros. El programa pregunta la edad y el dinero y debe responder si puedes ir o no a Canarias.
 
-\end{ejer}
 
-\begin{ejer}
+\newpage
 
-\subsection*{Acceder a elementos de una lista}
+\section{Listas I}
+
+
+
+
+
+
+\noindent\textbf{\sffamily Acceder a elementos de una lista}
+
+Dada la lista \verb|a = [4, 6, 7, 8]| accede a distintos elementos utilizando tanto Ã­ndices positivos como negativos.
+
+
+
+
+
+\noindent\textbf{\sffamily Acceder a elementos de una lista}
 
 Dada la lista \verb|a = [4, 6, 7, 8]| adivina el resultado de:
 
@@ -1909,9 +1843,9 @@ a[0] * a[1] * a[2] * a[3]
 \end{code}
 
 
-\subsection*{\dag{}$[\Uparrow]$ Los índices tienen que ser enteros}
+\noindent\textbf{\sffamily \dag{}$[\Uparrow]$ Los Ã­ndices tienen que ser enteros}
 
-Si el índice es un número decimal, entonces tenemos un error:
+Si el Ã­ndice es un nÃºmero decimal, entonces tenemos un error:
 
 \smallskip
 
@@ -1924,7 +1858,7 @@ a[1.0]
 
 \end{code}
 
-Una de las siguientes instrucciones dará un error. Explica la razón.
+Una de las siguientes instrucciones darÃ¡ un error. Explica la razÃ³n.
 
 \smallskip
 
@@ -1937,21 +1871,21 @@ a[6 // 3]
 
 \end{code}
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsection*{Crear listas con el mismo elemento}
+
+
+\noindent\textbf{\sffamily Crear listas con el mismo elemento}
 
 Crea una lista con 100 elementos y todos deben ser iguales a 0.
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsection*{La lista nula}
 
-En cierto sentido, la lista nula se comporta como el número cero. Responde a las siguientes cuestiones para comprobarlo.
+
+\noindent\textbf{\sffamily La lista nula}
+
+En cierto sentido, la lista nula se comporta como el nÃºmero cero. Responde a las siguientes cuestiones para comprobarlo.
 
 \begin{itemize}
 
@@ -1959,20 +1893,20 @@ En cierto sentido, la lista nula se comporta como el número cero. Responde a las
 
 \item  Concatena la lista nula consigo misma y observa el resultado.
 
-\item Multiplica la lista nula por un número y observa el resultado.
+\item Multiplica la lista nula por un nÃºmero y observa el resultado.
 
 \item Suma la lista nula a otra lista y observa el resultado.
 
 \end{itemize}
 
-\end{ejer}
-
-\begin{ejer}
 
 
-\subsection*{Multiplicación y concatenado}
 
-Intenta predecir el resultado del código:
+
+
+\noindent\textbf{\sffamily MultiplicaciÃ³n y concatenado}
+
+Intenta predecir el resultado del cÃ³digo:
 
 \smallskip
 
@@ -1986,33 +1920,33 @@ a * 3 + b * 2
 
 \end{code}
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsection*{\dag{} Convertir cadenas en listas}
 
-La función \verb|list()| puede convertir una cadena en una lista:
+
+\noindent\textbf{\sffamily \dag{} Convertir cadenas en listas}
+
+La funciÃ³n \verb|list()| puede convertir una cadena en una lista:
 
 \smallskip
 
 \begin{code}
 
 \begin{verbatim}
-cadena = 'Matemáticas'
+cadena = 'MatemÃ¡ticas'
 l = list(cadena)
 print(l)
 \end{verbatim}
 
 \end{code}
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsection*{Elementos en listas}
 
-¿Qué resultado obtenemos del siguiente código?
+
+\noindent\textbf{\sffamily Elementos en listas}
+
+Â¿QuÃ© resultado obtenemos del siguiente cÃ³digo?
 
 \smallskip
 
@@ -2026,13 +1960,13 @@ jinetes = [?guerra?, ?hambre?, ?peste?, ?muerte?]
 
 \end{code}
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsection*{\dag{} Listas anidadas}
 
-Una lista puede conter cualquier tipo de dato. En particular puede contener a otras listas. Cuando esto sucede se dice que las listas están \textbf{anidadas}.
+
+\noindent\textbf{\sffamily \dag{} Listas anidadas}
+
+Una lista puede conter cualquier tipo de dato. En particular puede contener a otras listas. Cuando esto sucede se dice que las listas estÃ¡n \textbf{anidadas}.
 
 \smallskip
 
@@ -2041,16 +1975,16 @@ Una lista puede conter cualquier tipo de dato. En particular puede contener a ot
 \begin{verbatim}
 a = [ [1, 2], ['a', 'b']]
 a[0]  # Accede al primer elemento que el una lista
-a[0][1]  # Accede a la posición 1 del primer elemento
+a[0][1]  # Accede a la posiciÃ³n 1 del primer elemento
 \end{verbatim}
 
 \end{code}
 
-\end{ejer}
 
-\begin{ejer}
 
-\subsection*{\dag{} Más listas anidadas}
+
+
+\noindent\textbf{\sffamily \dag{} MÃ¡s listas anidadas}
 
 Considera la siguiente lista \verb|x| formada por \guillemotleft tres filas\guillemotright:
 
@@ -2073,7 +2007,7 @@ x = [a, b, c]
 
 \item  Utilizando \textit{slicing} accede al elemento 3 y al elemento 8.
 
-\item Adivina el resultado del siguiente código:
+\item Adivina el resultado del siguiente cÃ³digo:
 
 \end{itemize}
 
@@ -2087,7 +2021,7 @@ x[2][0] + a[-1] - b[2]
 
 \end{code}
 
-\end{ejer}
+
 
 
 
